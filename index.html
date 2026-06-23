@@ -3,68 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heyansh Suppliers | Wholesale Sanitaryware</title>
+<title>Heyansh Suppliers | Wholesale Sanitaryware Dealer Bathinda</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f4f8fb;color:#1b1b1b}
+body{background:#f6f2ea;color:#171717}
+html{scroll-behavior:smooth}
+
 header{
-  background:#06283D;color:white;padding:18px 8%;
-  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap
+  background:#0d0d0d;color:white;padding:20px 8%;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;
+  position:sticky;top:0;z-index:1000
 }
-.logo{font-size:28px;font-weight:bold}
-nav a{color:white;text-decoration:none;margin:0 12px;font-weight:bold}
+.logo{font-size:30px;font-weight:bold;color:#d4af37;letter-spacing:1px}
+nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold}
+nav a:hover{color:#d4af37}
+
 .hero{
-  min-height:90vh;
-  background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-  url("https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80");
+  min-height:92vh;
+  background:
+  linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.55),rgba(0,0,0,.2)),
+  url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90");
   background-size:cover;background-position:center;
   display:flex;align-items:center;padding:0 8%;color:white
 }
-.hero h1{font-size:58px;max-width:700px}
-.hero p{font-size:21px;margin:20px 0;max-width:600px;line-height:1.5}
+.hero-badge{
+  display:inline-block;background:rgba(212,175,55,.16);
+  border:1px solid #d4af37;color:#d4af37;
+  padding:10px 18px;border-radius:30px;font-weight:bold;margin-bottom:22px
+}
+.hero h1{font-size:68px;max-width:850px;line-height:1.05}
+.hero span{color:#d4af37}
+.hero p{font-size:22px;margin:24px 0;max-width:680px;line-height:1.6;color:#eee}
 .btn{
-  background:#21a8ff;color:white;padding:14px 24px;border-radius:30px;
+  background:#d4af37;color:#111;padding:15px 28px;border-radius:35px;
   text-decoration:none;font-weight:bold;display:inline-block;margin-top:10px
 }
-section{padding:70px 8%}
-.title{text-align:center;font-size:38px;color:#06283D;margin-bottom:35px}
+.btn:hover{background:white;color:#111}
+.hero-points{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px}
+.hero-point{
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);
+  padding:13px 20px;border-radius:15px;backdrop-filter:blur(8px)
+}
+
+section{padding:75px 8%}
+.title{text-align:center;font-size:42px;margin-bottom:40px;color:#111}
+.title span{color:#b9932f}
+
 .products{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px
 }
 .card{
-  background:white;border-radius:18px;overflow:hidden;
-  box-shadow:0 10px 25px rgba(0,0,0,.12);transition:.3s
+  background:white;border-radius:24px;overflow:hidden;
+  box-shadow:0 14px 35px rgba(0,0,0,.14);transition:.3s
 }
 .card:hover{transform:translateY(-8px)}
-.card img{width:100%;height:210px;object-fit:cover}
-.card-content{padding:22px}
-.card h3{color:#06283D;font-size:23px;margin-bottom:10px}
-.price{font-size:20px;color:#0b8f3a;font-weight:bold;margin:12px 0}
-.tag{background:#e3f5ff;color:#0066a1;padding:6px 12px;border-radius:20px;font-size:14px;display:inline-block;margin-bottom:10px}
-.about{
-  background:#06283D;color:white;border-radius:25px;padding:45px;
-  font-size:19px;line-height:1.8;text-align:center
+.card img{width:100%;height:230px;object-fit:cover}
+.card-content{padding:25px}
+.tag{
+  background:#111;color:#d4af37;padding:7px 14px;border-radius:20px;
+  font-size:14px;display:inline-block;margin-bottom:12px
 }
+.card h3{font-size:24px;margin-bottom:10px}
+.card p{color:#555;line-height:1.5}
+.price{font-size:20px;color:#0b7a34;font-weight:bold;margin:15px 0}
+
+.luxury-box{
+  background:#111;color:white;border-radius:30px;padding:55px;text-align:center;
+  font-size:21px;line-height:1.8;box-shadow:0 14px 35px rgba(0,0,0,.25)
+}
+.luxury-box strong{color:#d4af37}
+
 .brands{
   display:flex;flex-wrap:wrap;gap:18px;justify-content:center
 }
 .brand{
-  background:white;padding:18px 35px;border-radius:15px;
-  font-size:20px;font-weight:bold;color:#06283D;box-shadow:0 5px 15px rgba(0,0,0,.1)
+  background:#111;color:#d4af37;padding:18px 35px;border-radius:16px;
+  font-size:20px;font-weight:bold;box-shadow:0 8px 22px rgba(0,0,0,.18)
 }
+
 .contact{
-  background:white;border-radius:25px;padding:40px;text-align:center;
-  box-shadow:0 10px 25px rgba(0,0,0,.1);font-size:20px;line-height:2
+  background:white;border-radius:30px;padding:50px;text-align:center;
+  box-shadow:0 14px 35px rgba(0,0,0,.14);font-size:21px;line-height:2
 }
-footer{background:#06283D;color:white;text-align:center;padding:22px}
+.contact strong{font-size:30px;color:#111}
+.map{
+  margin-top:25px;border-radius:20px;overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.16)
+}
+iframe{width:100%;height:350px;border:0}
+
+footer{background:#111;color:white;text-align:center;padding:25px}
 .whatsapp{
-  position:fixed;right:20px;bottom:20px;background:#25D366;color:white;
-  padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold
+  position:fixed;right:22px;bottom:22px;background:#25D366;color:white;
+  padding:16px 24px;border-radius:50px;text-decoration:none;font-weight:bold;z-index:999
 }
+
 @media(max-width:700px){
-  .hero h1{font-size:40px}
+  .hero h1{font-size:42px}
+  .hero p{font-size:18px}
   nav{margin-top:12px}
+  nav a{margin-left:10px;font-size:14px}
+  section{padding:55px 6%}
 }
 </style>
 </head>
@@ -75,6 +115,7 @@ footer{background:#06283D;color:white;text-align:center;padding:22px}
   <div class="logo">Heyansh Suppliers</div>
   <nav>
     <a href="#products">Products</a>
+    <a href="#about">About</a>
     <a href="#brands">Brands</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -82,124 +123,141 @@ footer{background:#06283D;color:white;text-align:center;padding:22px}
 
 <div class="hero">
   <div>
-    <h1>Premium Sanitaryware at Wholesale Prices</h1>
+    <div class="hero-badge">Premium Wholesale Sanitaryware Dealer</div>
+    <h1>Luxury <span>Bathroom Solutions</span> at Wholesale Prices</h1>
     <p>
-      Trusted wholesale supplier of toilets, wash basins, taps, showers,
-      bathroom fittings, pipes and complete sanitaryware solutions.
+      Heyansh Suppliers offers premium sanitaryware, toilets, wash basins,
+      faucets, showers, CP fittings, pipes and complete bathroom solutions
+      for retailers, builders, plumbers and contractors.
     </p>
-    <a class="btn" href="#products">View Products</a>
+    <a class="btn" href="https://wa.me/919878376000">Get Wholesale Quote</a>
+
+    <div class="hero-points">
+      <div class="hero-point">Bulk Orders</div>
+      <div class="hero-point">Premium Quality</div>
+      <div class="hero-point">Bathinda Supply</div>
+    </div>
   </div>
 </div>
 
 <section id="products">
-  <h2 class="title">Our Product Range</h2>
+  <h2 class="title">Our <span>Product Range</span></h2>
 
   <div class="products">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80">
+      <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=90">
       <div class="card-content">
-        <span class="tag">Wholesale Deal</span>
+        <span class="tag">Wholesale Dealer</span>
         <h3>Western Toilets</h3>
-        <p>Modern wall-mounted and floor-mounted toilet seats.</p>
-        <div class="price">Starting ₹2,999</div>
-        <a class="btn" href="https://wa.me/91XXXXXXXXXX">Enquire Now</a>
+        <p>Premium wall-mounted and floor-mounted toilet seats for modern bathrooms.</p>
+        <div class="price">Wholesale Rates Available</div>
+        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80">
+      <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=90">
       <div class="card-content">
-        <span class="tag">Best Seller</span>
+        <span class="tag">Designer Collection</span>
         <h3>Wash Basins</h3>
-        <p>Designer basins, table-top basins and wall-hung basins.</p>
-        <div class="price">Starting ₹1,499</div>
-        <a class="btn" href="https://wa.me/91XXXXXXXXXX">Enquire Now</a>
+        <p>Table-top basins, wall-hung basins and designer basin collections.</p>
+        <div class="price">Wholesale Rates Available</div>
+        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80">
+      <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=90">
       <div class="card-content">
-        <span class="tag">Premium</span>
-        <h3>Bathroom Faucets</h3>
-        <p>Taps, mixers, showers and luxury bathroom fittings.</p>
-        <div class="price">Starting ₹499</div>
-        <a class="btn" href="https://wa.me/91XXXXXXXXXX">Enquire Now</a>
+        <span class="tag">Luxury Finish</span>
+        <h3>Faucets & Taps</h3>
+        <p>Bathroom taps, mixers, faucets and premium CP fittings.</p>
+        <div class="price">Wholesale Rates Available</div>
+        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80">
+      <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=90">
       <div class="card-content">
         <span class="tag">Bulk Supply</span>
         <h3>Shower Sets</h3>
         <p>Rain showers, hand showers and complete shower systems.</p>
-        <div class="price">Starting ₹899</div>
-        <a class="btn" href="https://wa.me/91XXXXXXXXXX">Enquire Now</a>
+        <div class="price">Wholesale Rates Available</div>
+        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=80">
+      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=90">
+      <div class="card-content">
+        <span class="tag">Project Supply</span>
+        <h3>Bathroom Accessories</h3>
+        <p>Soap holders, racks, drains, mirrors and bathroom hardware.</p>
+        <div class="price">Bulk Rates Available</div>
+        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=900&q=90">
       <div class="card-content">
         <span class="tag">Contractor Choice</span>
         <h3>Pipes & Fittings</h3>
-        <p>Plumbing pipes, valves, fittings and accessories.</p>
-        <div class="price">Bulk rates available</div>
-        <a class="btn" href="https://wa.me/91XXXXXXXXXX">Enquire Now</a>
+        <p>Plumbing pipes, valves, fittings and essential sanitary accessories.</p>
+        <div class="price">Bulk Rates Available</div>
+        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
       </div>
     </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80">
-      <div class="card-content">
-        <span class="tag">Project Supply</span>
-        <h3>Complete Bathroom Sets</h3>
-        <p>Full bathroom sanitaryware packages for homes and projects.</p>
-        <div class="price">Custom quotation</div>
-        <a class="btn" href="https://wa.me/91XXXXXXXXXX">Enquire Now</a>
-      </div>
-    </div>
+  </div>
+</section>
 
+<section id="about">
+  <h2 class="title">Why Choose <span>Heyansh Suppliers?</span></h2>
+  <div class="luxury-box">
+    <strong>Heyansh Suppliers</strong> is a trusted wholesale dealer in sanitaryware sales
+    near Thermal Plant, Bathinda. We supply sanitaryware and bathroom fitting products
+    for retailers, builders, contractors, plumbers and project buyers. Our focus is
+    premium quality, genuine material, competitive wholesale pricing and reliable service.
   </div>
 </section>
 
 <section id="brands">
-  <h2 class="title">Brands We Deal In</h2>
+  <h2 class="title">Brands <span>We Deal In</span></h2>
   <div class="brands">
     <div class="brand">Jaquar</div>
     <div class="brand">Cera</div>
-    <div class="brand">Parryware</div>
     <div class="brand">Hindware</div>
+    <div class="brand">Parryware</div>
     <div class="brand">Kohler</div>
-    <div class="brand">Local Premium Brands</div>
-  </div>
-</section>
-
-<section>
-  <h2 class="title">Why Choose Us?</h2>
-  <div class="about">
-    Heyansh Suppliers offers reliable wholesale sanitaryware products at competitive prices.
-    We provide bulk supply for retailers, builders, plumbers, contractors, and bathroom projects.
-    Our focus is quality, fast delivery, genuine material, and long-term business trust.
+    <div class="brand">Premium Local Brands</div>
   </div>
 </section>
 
 <section id="contact">
-  <h2 class="title">Contact for Bulk Orders</h2>
+  <h2 class="title">Contact for <span>Wholesale Enquiry</span></h2>
+
   <div class="contact">
     <strong>Heyansh Suppliers</strong><br>
-    Wholesale Sanitaryware Dealer<br><br>
-    📞 Phone: +91 9878376000<br>
-    📍 Address: Add your shop address here<br>
-    ✉️ Email: heyanshsuppliers@gmail.com<br><br>
-    <a class="btn" href="https://wa.me/919878376000">Chat on WhatsApp</a>
+    Wholesale Dealer in Sanitaryware Sales<br><br>
+    📞 Phone / WhatsApp: +91 9878376000<br>
+    📍 Near Thermal Plant, Bathinda, Punjab 151001<br><br>
+
+    <a class="btn" href="https://wa.me/919878376000">Enquire Now on WhatsApp</a>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps?q=Thermal%20Plant%2C%20Bathinda%2C%20Punjab%20151001&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
   </div>
 </section>
 
 <footer>
-  © 2026 Heyansh Suppliers | Wholesale Sanitaryware Dealer
+  © 2026 Heyansh Suppliers | Wholesale Dealer in Sanitaryware Sales
 </footer>
 
 <a class="whatsapp" href="https://wa.me/919878376000">WhatsApp</a>
