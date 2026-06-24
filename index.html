@@ -1,266 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heyansh Suppliers | Wholesale Sanitaryware Dealer Bathinda</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heyansh Suppliers | Wholesale Sanitaryware India</title>
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f6f2ea;color:#171717}
-html{scroll-behavior:smooth}
+  <style>
+    :root{
+      --blue:#071b3a;
+      --blue2:#0b2d5c;
+      --gold:#d6a84f;
+      --white:#ffffff;
+      --light:#f5f7fb;
+      --text:#222;
+    }
 
-header{
-  background:#0d0d0d;color:white;padding:20px 8%;
-  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;
-  position:sticky;top:0;z-index:1000
-}
-.logo{font-size:30px;font-weight:bold;color:#d4af37;letter-spacing:1px}
-nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold}
-nav a:hover{color:#d4af37}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+    body{background:var(--light);color:var(--text);scroll-behavior:smooth;}
 
-.hero{
-  min-height:92vh;
-  background:
-  linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.55),rgba(0,0,0,.2)),
-  url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90");
-  background-size:cover;background-position:center;
-  display:flex;align-items:center;padding:0 8%;color:white
-}
-.hero-badge{
-  display:inline-block;background:rgba(212,175,55,.16);
-  border:1px solid #d4af37;color:#d4af37;
-  padding:10px 18px;border-radius:30px;font-weight:bold;margin-bottom:22px
-}
-.hero h1{font-size:68px;max-width:850px;line-height:1.05}
-.hero span{color:#d4af37}
-.hero p{font-size:22px;margin:24px 0;max-width:680px;line-height:1.6;color:#eee}
-.btn{
-  background:#d4af37;color:#111;padding:15px 28px;border-radius:35px;
-  text-decoration:none;font-weight:bold;display:inline-block;margin-top:10px
-}
-.btn:hover{background:white;color:#111}
-.hero-points{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px}
-.hero-point{
-  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);
-  padding:13px 20px;border-radius:15px;backdrop-filter:blur(8px)
-}
+    header{
+      background:rgba(7,27,58,.96);
+      color:white;
+      padding:18px 7%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:999;
+      box-shadow:0 5px 25px rgba(0,0,0,.25);
+    }
 
-section{padding:75px 8%}
-.title{text-align:center;font-size:42px;margin-bottom:40px;color:#111}
-.title span{color:#b9932f}
+    .logo{
+      font-size:26px;
+      font-weight:800;
+      color:var(--gold);
+      letter-spacing:1px;
+    }
 
-.products{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px
-}
-.card{
-  background:white;border-radius:24px;overflow:hidden;
-  box-shadow:0 14px 35px rgba(0,0,0,.14);transition:.3s
-}
-.card:hover{transform:translateY(-8px)}
-.card img{width:100%;height:230px;object-fit:cover}
-.card-content{padding:25px}
-.tag{
-  background:#111;color:#d4af37;padding:7px 14px;border-radius:20px;
-  font-size:14px;display:inline-block;margin-bottom:12px
-}
-.card h3{font-size:24px;margin-bottom:10px}
-.card p{color:#555;line-height:1.5}
-.price{font-size:20px;color:#0b7a34;font-weight:bold;margin:15px 0}
+    nav a{
+      color:white;
+      margin-left:25px;
+      text-decoration:none;
+      font-weight:600;
+    }
 
-.luxury-box{
-  background:#111;color:white;border-radius:30px;padding:55px;text-align:center;
-  font-size:21px;line-height:1.8;box-shadow:0 14px 35px rgba(0,0,0,.25)
-}
-.luxury-box strong{color:#d4af37}
+    nav a:hover{color:var(--gold);}
 
-.brands{
-  display:flex;flex-wrap:wrap;gap:18px;justify-content:center
-}
-.brand{
-  background:#111;color:#d4af37;padding:18px 35px;border-radius:16px;
-  font-size:20px;font-weight:bold;box-shadow:0 8px 22px rgba(0,0,0,.18)
-}
+    .hero{
+      min-height:90vh;
+      background:
+      linear-gradient(rgba(7,27,58,.82),rgba(7,27,58,.88)),
+      url("images/proton.jpg") center/cover;
+      color:white;
+      display:flex;
+      align-items:center;
+      padding:70px 7%;
+    }
 
-.contact{
-  background:white;border-radius:30px;padding:50px;text-align:center;
-  box-shadow:0 14px 35px rgba(0,0,0,.14);font-size:21px;line-height:2
-}
-.contact strong{font-size:30px;color:#111}
-.map{
-  margin-top:25px;border-radius:20px;overflow:hidden;
-  box-shadow:0 10px 25px rgba(0,0,0,.16)
-}
-iframe{width:100%;height:350px;border:0}
+    .hero-content{max-width:750px;}
+    .hero h1{
+      font-size:58px;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
 
-footer{background:#111;color:white;text-align:center;padding:25px}
-.whatsapp{
-  position:fixed;right:22px;bottom:22px;background:#25D366;color:white;
-  padding:16px 24px;border-radius:50px;text-decoration:none;font-weight:bold;z-index:999
-}
+    .hero h1 span{color:var(--gold);}
+    .hero p{font-size:20px;line-height:1.7;margin-bottom:30px;}
 
-@media(max-width:700px){
-  .hero h1{font-size:42px}
-  .hero p{font-size:18px}
-  nav{margin-top:12px}
-  nav a{margin-left:10px;font-size:14px}
-  section{padding:55px 6%}
-}
-</style>
+    .btn{
+      display:inline-block;
+      padding:15px 25px;
+      border-radius:40px;
+      background:var(--gold);
+      color:var(--blue);
+      text-decoration:none;
+      font-weight:800;
+      margin:8px;
+      border:none;
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    .btn:hover{transform:translateY(-4px);box-shadow:0 10px 25px rgba(0,0,0,.25);}
+    .btn-outline{background:white;color:var(--blue);}
+
+    section{padding:70px 7%;}
+    .title{text-align:center;margin-bottom:45px;}
+    .title h2{font-size:38px;color:var(--blue);}
+    .title p{color:#666;margin-top:10px;}
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:22px;
+    }
+
+    .feature{
+      background:white;
+      padding:28px;
+      border-radius:22px;
+      text-align:center;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      border-bottom:4px solid var(--gold);
+    }
+
+    .feature h3{color:var(--blue);margin-bottom:10px;}
+
+    .search-box{
+      max-width:600px;
+      margin:0 auto 35px;
+    }
+
+    .search-box input{
+      width:100%;
+      padding:16px 22px;
+      border:2px solid var(--gold);
+      border-radius:40px;
+      font-size:16px;
+      outline:none;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 12px 35px rgba(0,0,0,.1);
+      transition:.35s;
+    }
+
+    .card:hover{transform:translateY(-10px);}
+    .card img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+      background:white;
+    }
+
+    .card-content{padding:22px;}
+    .card-content h3{color:var(--blue);font-size:22px;margin-bottom:8px;}
+    .tag{
+      display:inline-block;
+      background:#eef2ff;
+      color:var(--blue);
+      padding:6px 13px;
+      border-radius:20px;
+      font-size:13px;
+      margin-bottom:15px;
+    }
+
+    .catalogue{
+      background:linear-gradient(135deg,var(--blue),var(--blue2));
+      color:white;
+      border-radius:30px;
+      padding:50px;
+      text-align:center;
+    }
+
+    .forms{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
+    }
+
+    form{
+      background:white;
+      padding:30px;
+      border-radius:25px;
+      box-shadow:0 10px 30px rgba(0,0,0,.1);
+    }
+
+    form h3{color:var(--blue);margin-bottom:20px;}
+    input,textarea,select{
+      width:100%;
+      padding:14px;
+      margin-bottom:15px;
+      border:1px solid #ddd;
+      border-radius:12px;
+      font-size:15px;
+    }
+
+    textarea{height:120px;}
+
+    .map iframe{
+      width:100%;
+      height:380px;
+      border:0;
+      border-radius:25px;
+      box-shadow:0 10px 30px rgba(0,0,0,.12);
+    }
+
+    footer{
+      background:var(--blue);
+      color:white;
+      padding:45px 7%;
+      text-align:center;
+    }
+
+    footer h2{color:var(--gold);margin-bottom:15px;}
+
+    .floating-whatsapp{
+      position:fixed;
+      right:22px;
+      bottom:90px;
+      background:#25D366;
+      color:white;
+      padding:15px 22px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:800;
+      z-index:9999;
+      box-shadow:0 8px 25px rgba(0,0,0,.3);
+    }
+
+    .sticky-call{
+      display:none;
+      position:fixed;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:var(--gold);
+      color:var(--blue);
+      text-align:center;
+      padding:16px;
+      font-weight:900;
+      text-decoration:none;
+      z-index:9999;
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(40px);
+      transition:1s;
+    }
+
+    .reveal.active{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    @media(max-width:768px){
+      nav{display:none;}
+      .hero h1{font-size:38px;}
+      .hero p{font-size:17px;}
+      .sticky-call{display:block;}
+      .floating-whatsapp{bottom:75px;right:15px;}
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">Heyansh Suppliers</div>
+  <div class="logo">HEYANSH SUPPLIERS</div>
   <nav>
     <a href="#products">Products</a>
-    <a href="#about">About</a>
-    <a href="#brands">Brands</a>
+    <a href="#catalogue">Catalogue</a>
+    <a href="#dealer">Dealer Form</a>
+    <a href="#location">Location</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<div class="hero">
-  <div>
-    <div class="hero-badge">Premium Wholesale Sanitaryware Dealer</div>
-    <h1>Luxury <span>Bathroom Solutions</span> at Wholesale Prices</h1>
+<section class="hero">
+  <div class="hero-content reveal">
+    <h1>Premium <span>Wholesale Sanitaryware</span> Supplier in India</h1>
     <p>
-      Heyansh Suppliers offers premium sanitaryware, toilets, wash basins,
-      faucets, showers, CP fittings, pipes and complete bathroom solutions
-      for retailers, builders, plumbers and contractors.
+      Designer Basins, One Piece Closets, Bathroom Solutions & Bulk Sanitaryware Supply.
+      Serving dealers, builders, contractors and retailers across India.
     </p>
-    <a class="btn" href="https://wa.me/919878376000">Get Wholesale Quote</a>
-
-    <div class="hero-points">
-      <div class="hero-point">Bulk Orders</div>
-      <div class="hero-point">Premium Quality</div>
-      <div class="hero-point">Bathinda Supply</div>
-    </div>
+    <a class="btn" href="#products">View Products</a>
+    <a class="btn btn-outline" href="https://wa.me/919878376000?text=Hello%20Heyansh%20Suppliers,%20I%20want%20wholesale%20price%20details." target="_blank">WhatsApp Now</a>
   </div>
-</div>
+</section>
 
-<section id="products">
-  <h2 class="title">Our <span>Product Range</span></h2>
+<section class="reveal">
+  <div class="features">
+    <div class="feature"><h3>Wholesale Supplier</h3><p>Best pricing for dealers and bulk buyers.</p></div>
+    <div class="feature"><h3>Pan India Shipping</h3><p>Secure packaging and dispatch across India.</p></div>
+    <div class="feature"><h3>Premium Products</h3><p>Designer sanitaryware with modern finish.</p></div>
+    <div class="feature"><h3>Dealer Support</h3><p>Fast enquiry response and catalogue assistance.</p></div>
+  </div>
+</section>
 
-  <div class="products">
+<section id="products" class="reveal">
+  <div class="title">
+    <h2>Our Product Range</h2>
+    <p>Search latest available sanitaryware models</p>
+  </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=90">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search product like Puma, Scope, Basin, Closet..." onkeyup="searchProducts()">
+  </div>
+
+  <div class="products" id="productGrid">
+
+    <div class="card product" data-name="puma one piece closet toilet">
+      <img src="images/puma.jpg" alt="Puma One Piece Closet">
       <div class="card-content">
-        <span class="tag">Wholesale Dealer</span>
-        <h3>Western Toilets</h3>
-        <p>Premium wall-mounted and floor-mounted toilet seats for modern bathrooms.</p>
-        <div class="price">Wholesale Rates Available</div>
-        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
+        <span class="tag">One Piece Closet</span>
+        <h3>Puma</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
       </div>
     </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=90">
+    <div class="card product" data-name="1130 one piece closet toilet">
+      <img src="images/closet1130.jpg" alt="1130 One Piece Closet">
       <div class="card-content">
-        <span class="tag">Designer Collection</span>
-        <h3>Wash Basins</h3>
-        <p>Table-top basins, wall-hung basins and designer basin collections.</p>
-        <div class="price">Wholesale Rates Available</div>
-        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
+        <span class="tag">One Piece Closet</span>
+        <h3>1130</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
       </div>
     </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=90">
+    <div class="card product" data-name="1160 one piece closet toilet">
+      <img src="images/closet1160.jpg" alt="1160 One Piece Closet">
       <div class="card-content">
-        <span class="tag">Luxury Finish</span>
-        <h3>Faucets & Taps</h3>
-        <p>Bathroom taps, mixers, faucets and premium CP fittings.</p>
-        <div class="price">Wholesale Rates Available</div>
-        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
+        <span class="tag">One Piece Closet</span>
+        <h3>1160</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
       </div>
     </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=90">
+    <div class="card product" data-name="scope one piece closet toilet">
+      <img src="images/scope.jpg" alt="Scope One Piece Closet">
       <div class="card-content">
-        <span class="tag">Bulk Supply</span>
-        <h3>Shower Sets</h3>
-        <p>Rain showers, hand showers and complete shower systems.</p>
-        <div class="price">Wholesale Rates Available</div>
-        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
+        <span class="tag">One Piece Closet</span>
+        <h3>Scope</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
       </div>
     </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=90">
+    <div class="card product" data-name="plasma 1009 one piece closet toilet">
+      <img src="images/plasma.jpg" alt="Plasma 1009">
       <div class="card-content">
-        <span class="tag">Project Supply</span>
-        <h3>Bathroom Accessories</h3>
-        <p>Soap holders, racks, drains, mirrors and bathroom hardware.</p>
-        <div class="price">Bulk Rates Available</div>
-        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
+        <span class="tag">One Piece Closet</span>
+        <h3>Plasma 1009</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
       </div>
     </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=900&q=90">
+    <div class="card product" data-name="polo 1001 one piece closet toilet">
+      <img src="images/polo.jpg" alt="Polo 1001">
       <div class="card-content">
-        <span class="tag">Contractor Choice</span>
-        <h3>Pipes & Fittings</h3>
-        <p>Plumbing pipes, valves, fittings and essential sanitary accessories.</p>
-        <div class="price">Bulk Rates Available</div>
-        <a class="btn" href="https://wa.me/919878376000">Enquire Now</a>
+        <span class="tag">One Piece Closet</span>
+        <h3>Polo 1001</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
+      </div>
+    </div>
+
+    <div class="card product" data-name="lunar one piece closet toilet">
+      <img src="images/lunar.jpg" alt="Lunar Closet">
+      <div class="card-content">
+        <span class="tag">One Piece Closet</span>
+        <h3>Lunar</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
+      </div>
+    </div>
+
+    <div class="card product" data-name="jupiter 200 designer basin">
+      <img src="images/jupiter200.jpg" alt="Jupiter 200 Basin">
+      <div class="card-content">
+        <span class="tag">Designer Basin</span>
+        <h3>Jupiter 200</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
+      </div>
+    </div>
+
+    <div class="card product" data-name="jupiter 300 designer basin">
+      <img src="images/jupiter300.jpg" alt="Jupiter 300 Basin">
+      <div class="card-content">
+        <span class="tag">Designer Basin</span>
+        <h3>Jupiter 300</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
+      </div>
+    </div>
+
+    <div class="card product" data-name="proton white designer basin">
+      <img src="images/proton.jpg" alt="Proton White Basin">
+      <div class="card-content">
+        <span class="tag">Designer Basin</span>
+        <h3>Proton White</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
+      </div>
+    </div>
+
+    <div class="card product" data-name="damru white designer basin">
+      <img src="images/damru.jpg" alt="Damru White Basin">
+      <div class="card-content">
+        <span class="tag">Designer Basin</span>
+        <h3>Damru White</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
+      </div>
+    </div>
+
+    <div class="card product" data-name="lomino black designer basin">
+      <img src="images/lomino.jpg" alt="Lomino Black Basin">
+      <div class="card-content">
+        <span class="tag">Designer Basin</span>
+        <h3>Lomino Black</h3>
+        <a class="btn" href="#inquiry">Send Inquiry</a>
       </div>
     </div>
 
   </div>
 </section>
 
-<section id="about">
-  <h2 class="title">Why Choose <span>Heyansh Suppliers?</span></h2>
-  <div class="luxury-box">
-    <strong>Heyansh Suppliers</strong> is a trusted wholesale dealer in sanitaryware sales
-    near Thermal Plant, Bathinda. We supply sanitaryware and bathroom fitting products
-    for retailers, builders, contractors, plumbers and project buyers. Our focus is
-    premium quality, genuine material, competitive wholesale pricing and reliable service.
+<section id="catalogue" class="reveal">
+  <div class="catalogue">
+    <h2>Latest Product Catalogue</h2>
+    <p style="margin:18px 0;font-size:18px;">
+      Our product range keeps changing based on stock and new arrivals. Download the latest catalogue or WhatsApp us for current availability.
+    </p>
+    <a class="btn" href="catalogue.pdf" download>Download Product Catalogue PDF</a>
+    <a class="btn btn-outline" href="https://wa.me/919878376000?text=Please%20send%20me%20your%20latest%20product%20catalogue%20and%20wholesale%20price%20list." target="_blank">Get Latest Catalogue on WhatsApp</a>
   </div>
 </section>
 
-<section id="brands">
-  <h2 class="title">Brands <span>We Deal In</span></h2>
-  <div class="brands">
-    <div class="brand">Jaquar</div>
-    <div class="brand">Cera</div>
-    <div class="brand">Hindware</div>
-    <div class="brand">Parryware</div>
-    <div class="brand">Kohler</div>
-    <div class="brand">Premium Local Brands</div>
+<section id="inquiry" class="reveal">
+  <div class="title">
+    <h2>Inquiry & Dealer Registration</h2>
+    <p>Send your requirement directly on WhatsApp</p>
+  </div>
+
+  <div class="forms">
+    <form onsubmit="sendInquiry(); return false;">
+      <h3>Product Inquiry Form</h3>
+      <input id="inqName" placeholder="Your Name" required>
+      <input id="inqPhone" placeholder="Phone Number" required>
+      <input id="inqProduct" placeholder="Product Name / Requirement" required>
+      <textarea id="inqMessage" placeholder="Quantity, location, or special requirement"></textarea>
+      <button class="btn" type="submit">Send Inquiry on WhatsApp</button>
+    </form>
+
+    <form id="dealer" onsubmit="dealerRegister(); return false;">
+      <h3>Dealer Registration Form</h3>
+      <input id="dealerName" placeholder="Dealer / Business Name" required>
+      <input id="dealerPhone" placeholder="Phone Number" required>
+      <input id="dealerCity" placeholder="City / State" required>
+      <select id="dealerType">
+        <option>Sanitaryware Dealer</option>
+        <option>Builder / Contractor</option>
+        <option>Retailer</option>
+        <option>Distributor</option>
+      </select>
+      <button class="btn" type="submit">Register as Dealer</button>
+    </form>
   </div>
 </section>
 
-<section id="contact">
-  <h2 class="title">Contact for <span>Wholesale Enquiry</span></h2>
-
-  <div class="contact">
-    <strong>Heyansh Suppliers</strong><br>
-    Wholesale Dealer in Sanitaryware Sales<br><br>
-    📞 Phone / WhatsApp: +91 9878376000<br>
-    📍 Near Thermal Plant, Bathinda, Punjab 151001<br><br>
-
-    <a class="btn" href="https://wa.me/919878376000">Enquire Now on WhatsApp</a>
-
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps?q=Thermal%20Plant%2C%20Bathinda%2C%20Punjab%20151001&output=embed"
-        loading="lazy">
-      </iframe>
-    </div>
+<section id="location" class="map reveal">
+  <div class="title">
+    <h2>Visit Our Warehouse</h2>
+    <p>Ganpati Agro Godowns, Malout Road, Bathinda, Punjab – 151001</p>
   </div>
+
+  <iframe
+    src="https://www.google.com/maps?q=Ganpati%20Agro%20Godowns%2C%20Malout%20Road%2C%20Bathinda%2C%20Punjab%20151001&output=embed">
+  </iframe>
 </section>
 
-<footer>
-  © 2026 Heyansh Suppliers | Wholesale Dealer in Sanitaryware Sales
+<footer id="contact">
+  <h2>HEYANSH SUPPLIERS</h2>
+  <p>Wholesale Supplier of Sanitaryware, Designer Basins & Bathroom Solutions</p>
+  <p>Ganpati Agro Godowns, Malout Road, Bathinda, Punjab – 151001</p>
+  <p>Phone / WhatsApp: +91 98783 76000</p>
+  <p>Pan India Shipping Available</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919878376000">WhatsApp</a>
+<a class="floating-whatsapp" href="https://wa.me/919878376000?text=Hello%20Heyansh%20Suppliers,%20I%20want%20to%20enquire%20about%20wholesale%20sanitaryware." target="_blank">
+  WhatsApp
+</a>
+
+<a class="sticky-call" href="tel:+919878376000">
+  Call Now: +91 98783 76000
+</a>
+
+<script>
+  function searchProducts(){
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let products = document.querySelectorAll(".product");
+
+    products.forEach(product => {
+      let name = product.getAttribute("data-name").toLowerCase();
+      product.style.display = name.includes(input) ? "block" : "none";
+    });
+  }
+
+  function sendInquiry(){
+    let name = document.getElementById("inqName").value;
+    let phone = document.getElementById("inqPhone").value;
+    let product = document.getElementById("inqProduct").value;
+    let message = document.getElementById("inqMessage").value;
+
+    let text = `Hello Heyansh Suppliers,%0A%0AI want to enquire about:%0AProduct: ${product}%0AName: ${name}%0APhone: ${phone}%0AMessage: ${message}%0A%0APlease share wholesale price and availability.`;
+    window.open(`https://wa.me/919878376000?text=${text}`, "_blank");
+  }
+
+  function dealerRegister(){
+    let name = document.getElementById("dealerName").value;
+    let phone = document.getElementById("dealerPhone").value;
+    let city = document.getElementById("dealerCity").value;
+    let type = document.getElementById("dealerType").value;
+
+    let text = `Hello Heyansh Suppliers,%0A%0AI want to register as a dealer.%0ABusiness Name: ${name}%0APhone: ${phone}%0ACity/State: ${city}%0AType: ${type}%0A%0APlease share dealership/wholesale details.`;
+    window.open(`https://wa.me/919878376000?text=${text}`, "_blank");
+  }
+
+  window.addEventListener("scroll", reveal);
+
+  function reveal(){
+    let reveals = document.querySelectorAll(".reveal");
+    reveals.forEach(item => {
+      let windowHeight = window.innerHeight;
+      let revealTop = item.getBoundingClientRect().top;
+      if(revealTop < windowHeight - 100){
+        item.classList.add("active");
+      }
+    });
+  }
+
+  reveal();
+</script>
 
 </body>
 </html>
