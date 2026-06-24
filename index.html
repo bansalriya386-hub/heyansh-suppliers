@@ -1,258 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Heyansh Suppliers | Wholesale Sanitaryware India</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heyansh Suppliers | Wholesale Sanitaryware Supplier India</title>
 
-  <style>
-    :root{
-      --blue:#071b3a;
-      --blue2:#0b2d5c;
-      --gold:#d6a84f;
-      --white:#ffffff;
-      --light:#f5f7fb;
-      --text:#222;
-    }
-
-    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
-    body{background:var(--light);color:var(--text);scroll-behavior:smooth;}
-
-    header{
-      background:rgba(7,27,58,.96);
-      color:white;
-      padding:18px 7%;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      position:sticky;
-      top:0;
-      z-index:999;
-      box-shadow:0 5px 25px rgba(0,0,0,.25);
-    }
-
-    .logo{
-      font-size:26px;
-      font-weight:800;
-      color:var(--gold);
-      letter-spacing:1px;
-    }
-
-    nav a{
-      color:white;
-      margin-left:25px;
-      text-decoration:none;
-      font-weight:600;
-    }
-
-    nav a:hover{color:var(--gold);}
-
-    .hero{
-      min-height:90vh;
-      background:
-      linear-gradient(rgba(7,27,58,.82),rgba(7,27,58,.88)),
-      url("images/proton.jpg") center/cover;
-      color:white;
-      display:flex;
-      align-items:center;
-      padding:70px 7%;
-    }
-
-    .hero-content{max-width:750px;}
-    .hero h1{
-      font-size:58px;
-      line-height:1.1;
-      margin-bottom:20px;
-    }
-
-    .hero h1 span{color:var(--gold);}
-    .hero p{font-size:20px;line-height:1.7;margin-bottom:30px;}
-
-    .btn{
-      display:inline-block;
-      padding:15px 25px;
-      border-radius:40px;
-      background:var(--gold);
-      color:var(--blue);
-      text-decoration:none;
-      font-weight:800;
-      margin:8px;
-      border:none;
-      cursor:pointer;
-      transition:.3s;
-    }
-
-    .btn:hover{transform:translateY(-4px);box-shadow:0 10px 25px rgba(0,0,0,.25);}
-    .btn-outline{background:white;color:var(--blue);}
-
-    section{padding:70px 7%;}
-    .title{text-align:center;margin-bottom:45px;}
-    .title h2{font-size:38px;color:var(--blue);}
-    .title p{color:#666;margin-top:10px;}
-
-    .features{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:22px;
-    }
-
-    .feature{
-      background:white;
-      padding:28px;
-      border-radius:22px;
-      text-align:center;
-      box-shadow:0 10px 30px rgba(0,0,0,.08);
-      border-bottom:4px solid var(--gold);
-    }
-
-    .feature h3{color:var(--blue);margin-bottom:10px;}
-
-    .search-box{
-      max-width:600px;
-      margin:0 auto 35px;
-    }
-
-    .search-box input{
-      width:100%;
-      padding:16px 22px;
-      border:2px solid var(--gold);
-      border-radius:40px;
-      font-size:16px;
-      outline:none;
-    }
-
-    .products{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:30px;
-    }
-
-    .card{
-      background:white;
-      border-radius:24px;
-      overflow:hidden;
-      box-shadow:0 12px 35px rgba(0,0,0,.1);
-      transition:.35s;
-    }
-
-    .card:hover{transform:translateY(-10px);}
-    .card img{
-      width:100%;
-      height:280px;
-      object-fit:cover;
-      background:white;
-    }
-
-    .card-content{padding:22px;}
-    .card-content h3{color:var(--blue);font-size:22px;margin-bottom:8px;}
-    .tag{
-      display:inline-block;
-      background:#eef2ff;
-      color:var(--blue);
-      padding:6px 13px;
-      border-radius:20px;
-      font-size:13px;
-      margin-bottom:15px;
-    }
-
-    .catalogue{
-      background:linear-gradient(135deg,var(--blue),var(--blue2));
-      color:white;
-      border-radius:30px;
-      padding:50px;
-      text-align:center;
-    }
-
-    .forms{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-      gap:30px;
-    }
-
-    form{
-      background:white;
-      padding:30px;
-      border-radius:25px;
-      box-shadow:0 10px 30px rgba(0,0,0,.1);
-    }
-
-    form h3{color:var(--blue);margin-bottom:20px;}
-    input,textarea,select{
-      width:100%;
-      padding:14px;
-      margin-bottom:15px;
-      border:1px solid #ddd;
-      border-radius:12px;
-      font-size:15px;
-    }
-
-    textarea{height:120px;}
-
-    .map iframe{
-      width:100%;
-      height:380px;
-      border:0;
-      border-radius:25px;
-      box-shadow:0 10px 30px rgba(0,0,0,.12);
-    }
-
-    footer{
-      background:var(--blue);
-      color:white;
-      padding:45px 7%;
-      text-align:center;
-    }
-
-    footer h2{color:var(--gold);margin-bottom:15px;}
-
-    .floating-whatsapp{
-      position:fixed;
-      right:22px;
-      bottom:90px;
-      background:#25D366;
-      color:white;
-      padding:15px 22px;
-      border-radius:50px;
-      text-decoration:none;
-      font-weight:800;
-      z-index:9999;
-      box-shadow:0 8px 25px rgba(0,0,0,.3);
-    }
-
-    .sticky-call{
-      display:none;
-      position:fixed;
-      bottom:0;
-      left:0;
-      width:100%;
-      background:var(--gold);
-      color:var(--blue);
-      text-align:center;
-      padding:16px;
-      font-weight:900;
-      text-decoration:none;
-      z-index:9999;
-    }
-
-    .reveal{
-      opacity:0;
-      transform:translateY(40px);
-      transition:1s;
-    }
-
-    .reveal.active{
-      opacity:1;
-      transform:translateY(0);
-    }
-
-    @media(max-width:768px){
-      nav{display:none;}
-      .hero h1{font-size:38px;}
-      .hero p{font-size:17px;}
-      .sticky-call{display:block;}
-      .floating-whatsapp{bottom:75px;right:15px;}
-    }
-  </style>
+<style>
+:root{
+  --blue:#071b3a;
+  --blue2:#0d2b52;
+  --gold:#d6a84f;
+  --white:#fff;
+  --light:#f6f8fc;
+  --text:#222;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:var(--light);color:var(--text)}
+header{background:var(--blue);color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:999}
+.logo{font-size:26px;font-weight:900;color:var(--gold)}
+nav a{color:white;text-decoration:none;margin-left:22px;font-weight:700}
+nav a:hover{color:var(--gold)}
+.hero{min-height:90vh;background:linear-gradient(rgba(7,27,58,.82),rgba(7,27,58,.88)),url("images/jupiter.jpg") center/cover;color:white;display:flex;align-items:center;padding:80px 7%}
+.hero h1{font-size:58px;max-width:850px;line-height:1.1}
+.hero span{color:var(--gold)}
+.hero p{font-size:20px;max-width:780px;line-height:1.7;margin:25px 0}
+.btn{display:inline-block;background:var(--gold);color:var(--blue);padding:14px 24px;border-radius:40px;text-decoration:none;font-weight:900;margin:8px;border:none;cursor:pointer}
+.btn.white{background:white;color:var(--blue)}
+section{padding:70px 7%}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:38px;color:var(--blue)}
+.title p{color:#666;margin-top:10px}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.feature{background:white;padding:28px;border-radius:22px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.08);border-bottom:4px solid var(--gold)}
+.feature h3{color:var(--blue);margin-bottom:10px}
+.search-box{max-width:650px;margin:0 auto 35px}
+.search-box input{width:100%;padding:16px 22px;border:2px solid var(--gold);border-radius:40px;font-size:16px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:30px}
+.card{background:white;border-radius:24px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.1);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card img{width:100%;height:320px;object-fit:cover;background:#fff}
+.card-content{padding:22px;text-align:center}
+.card h3{color:var(--blue);font-size:22px;margin-bottom:10px}
+.tag{display:inline-block;background:#eef2ff;color:var(--blue);padding:7px 14px;border-radius:20px;font-size:13px;margin-bottom:12px}
+.catalogue{background:linear-gradient(135deg,var(--blue),var(--blue2));color:white;text-align:center;border-radius:30px;padding:50px}
+.forms{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px}
+form{background:white;padding:30px;border-radius:25px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+form h3{color:var(--blue);margin-bottom:20px}
+input,textarea,select{width:100%;padding:14px;margin-bottom:15px;border:1px solid #ddd;border-radius:12px;font-size:15px}
+textarea{height:120px}
+.location-box{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.location-card{background:white;padding:35px;border-radius:25px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+iframe{width:100%;height:420px;border:0;border-radius:25px}
+footer{background:var(--blue);color:white;text-align:center;padding:45px 7%}
+footer h2{color:var(--gold);margin-bottom:15px}
+.float-wa{position:fixed;right:20px;bottom:85px;background:#25D366;color:white;padding:15px 22px;border-radius:50px;text-decoration:none;font-weight:900;z-index:9999;box-shadow:0 8px 25px rgba(0,0,0,.3)}
+.sticky-call{display:none;position:fixed;bottom:0;left:0;width:100%;background:var(--gold);color:var(--blue);text-align:center;padding:16px;font-weight:900;text-decoration:none;z-index:9999}
+.reveal{opacity:0;transform:translateY(35px);transition:1s}
+.reveal.active{opacity:1;transform:translateY(0)}
+@media(max-width:768px){
+  nav{display:none}
+  .hero h1{font-size:38px}
+  .hero p{font-size:17px}
+  .location-box{grid-template-columns:1fr}
+  .sticky-call{display:block}
+  .float-wa{bottom:75px}
+}
+</style>
 </head>
 
 <body>
@@ -262,28 +75,25 @@
   <nav>
     <a href="#products">Products</a>
     <a href="#catalogue">Catalogue</a>
-    <a href="#dealer">Dealer Form</a>
+    <a href="#inquiry">Inquiry</a>
+    <a href="#dealer">Dealer</a>
     <a href="#location">Location</a>
-    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-content reveal">
-    <h1>Premium <span>Wholesale Sanitaryware</span> Supplier in India</h1>
-    <p>
-      Designer Basins, One Piece Closets, Bathroom Solutions & Bulk Sanitaryware Supply.
-      Serving dealers, builders, contractors and retailers across India.
-    </p>
+  <div class="reveal">
+    <h1>Premium <span>Wholesale Sanitaryware</span> Supplier Across India</h1>
+    <p>Designer Basins, One Piece Closets, Bathroom Solutions & Bulk Sanitaryware Supply for dealers, builders, contractors and retailers.</p>
     <a class="btn" href="#products">View Products</a>
-    <a class="btn btn-outline" href="https://wa.me/919878376000?text=Hello%20Heyansh%20Suppliers,%20I%20want%20wholesale%20price%20details." target="_blank">WhatsApp Now</a>
+    <a class="btn white" href="https://wa.me/919878376000?text=Hello%20Heyansh%20Suppliers,%20I%20want%20wholesale%20price%20details." target="_blank">WhatsApp Now</a>
   </div>
 </section>
 
 <section class="reveal">
   <div class="features">
     <div class="feature"><h3>Wholesale Supplier</h3><p>Best pricing for dealers and bulk buyers.</p></div>
-    <div class="feature"><h3>Pan India Shipping</h3><p>Secure packaging and dispatch across India.</p></div>
+    <div class="feature"><h3>Pan India Shipping</h3><p>Secure packaging and delivery across India.</p></div>
     <div class="feature"><h3>Premium Products</h3><p>Designer sanitaryware with modern finish.</p></div>
     <div class="feature"><h3>Dealer Support</h3><p>Fast enquiry response and catalogue assistance.</p></div>
   </div>
@@ -291,122 +101,59 @@
 
 <section id="products" class="reveal">
   <div class="title">
-    <h2>Our Product Range</h2>
+    <h2>Featured Products</h2>
     <p>Search latest available sanitaryware models</p>
   </div>
 
   <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search product like Puma, Scope, Basin, Closet..." onkeyup="searchProducts()">
+    <input type="text" id="searchInput" placeholder="Search basin, closet, black, white, panther..." onkeyup="searchProducts()">
   </div>
 
-  <div class="products" id="productGrid">
+  <div class="products">
 
-    <div class="card product" data-name="puma one piece closet toilet">
-      <img src="images/puma.jpg" alt="Puma One Piece Closet">
-      <div class="card-content">
-        <span class="tag">One Piece Closet</span>
-        <h3>Puma</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
+    <div class="card product" data-name="jupiter designer basin">
+      <img src="images/jupiter.jpg" alt="Jupiter Designer Basin">
+      <div class="card-content"><span class="tag">Designer Basin</span><h3>Jupiter Designer Basin</h3><a class="btn" href="#inquiry">Send Inquiry</a></div>
     </div>
 
-    <div class="card product" data-name="1130 one piece closet toilet">
-      <img src="images/closet1130.jpg" alt="1130 One Piece Closet">
-      <div class="card-content">
-        <span class="tag">One Piece Closet</span>
-        <h3>1130</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
+    <div class="card product" data-name="black crystal designer basin">
+      <img src="images/black_crystal.jpg" alt="Black Crystal Basin">
+      <div class="card-content"><span class="tag">Luxury Basin</span><h3>Black Crystal Basin</h3><a class="btn" href="#inquiry">Send Inquiry</a></div>
     </div>
 
-    <div class="card product" data-name="1160 one piece closet toilet">
-      <img src="images/closet1160.jpg" alt="1160 One Piece Closet">
-      <div class="card-content">
-        <span class="tag">One Piece Closet</span>
-        <h3>1160</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
+    <div class="card product" data-name="black glossy designer basin">
+      <img src="images/black_glossy.jpg" alt="Black Glossy Basin">
+      <div class="card-content"><span class="tag">Designer Basin</span><h3>Black Glossy Basin</h3><a class="btn" href="#inquiry">Send Inquiry</a></div>
     </div>
 
-    <div class="card product" data-name="scope one piece closet toilet">
-      <img src="images/scope.jpg" alt="Scope One Piece Closet">
-      <div class="card-content">
-        <span class="tag">One Piece Closet</span>
-        <h3>Scope</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
+    <div class="card product" data-name="black matte designer basin">
+      <img src="images/black_matte.jpg" alt="Black Matte Basin">
+      <div class="card-content"><span class="tag">Designer Basin</span><h3>Black Matte Basin</h3><a class="btn" href="#inquiry">Send Inquiry</a></div>
     </div>
 
-    <div class="card product" data-name="plasma 1009 one piece closet toilet">
-      <img src="images/plasma.jpg" alt="Plasma 1009">
-      <div class="card-content">
-        <span class="tag">One Piece Closet</span>
-        <h3>Plasma 1009</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
+    <div class="card product" data-name="linia glossy basin">
+      <img src="images/linia_glossy.jpg" alt="Linia Glossy Basin">
+      <div class="card-content"><span class="tag">Premium Basin</span><h3>Linia Glossy Basin</h3><a class="btn" href="#inquiry">Send Inquiry</a></div>
     </div>
 
-    <div class="card product" data-name="polo 1001 one piece closet toilet">
-      <img src="images/polo.jpg" alt="Polo 1001">
-      <div class="card-content">
-        <span class="tag">One Piece Closet</span>
-        <h3>Polo 1001</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
+    <div class="card product" data-name="panther one piece closet">
+      <img src="images/panther.jpg" alt="Panther Closet">
+      <div class="card-content"><span class="tag">One Piece Closet</span><h3>Panther Closet</h3><a class="btn" href="#inquiry">Send Inquiry</a></div>
     </div>
 
-    <div class="card product" data-name="lunar one piece closet toilet">
-      <img src="images/lunar.jpg" alt="Lunar Closet">
-      <div class="card-content">
-        <span class="tag">One Piece Closet</span>
-        <h3>Lunar</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
+    <div class="card product" data-name="reeto 110 one piece closet">
+      <img src="images/reeto110.jpg" alt="Reeto 110 Closet">
+      <div class="card-content"><span class="tag">One Piece Closet</span><h3>Reeto 110 Closet</h3><a class="btn" href="#inquiry">Send Inquiry</a></div>
     </div>
 
-    <div class="card product" data-name="jupiter 200 designer basin">
-      <img src="images/jupiter200.jpg" alt="Jupiter 200 Basin">
-      <div class="card-content">
-        <span class="tag">Designer Basin</span>
-        <h3>Jupiter 200</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
+    <div class="card product" data-name="white glossy basin closet">
+      <img src="images/white_glossy.jpg" alt="White Glossy Product">
+      <div class="card-content"><span class="tag">Premium Sanitaryware</span><h3>White Glossy Collection</h3><a class="btn" href="#inquiry">Send Inquiry</a></div>
     </div>
 
-    <div class="card product" data-name="jupiter 300 designer basin">
-      <img src="images/jupiter300.jpg" alt="Jupiter 300 Basin">
-      <div class="card-content">
-        <span class="tag">Designer Basin</span>
-        <h3>Jupiter 300</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
-    </div>
-
-    <div class="card product" data-name="proton white designer basin">
-      <img src="images/proton.jpg" alt="Proton White Basin">
-      <div class="card-content">
-        <span class="tag">Designer Basin</span>
-        <h3>Proton White</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
-    </div>
-
-    <div class="card product" data-name="damru white designer basin">
-      <img src="images/damru.jpg" alt="Damru White Basin">
-      <div class="card-content">
-        <span class="tag">Designer Basin</span>
-        <h3>Damru White</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
-    </div>
-
-    <div class="card product" data-name="lomino black designer basin">
-      <img src="images/lomino.jpg" alt="Lomino Black Basin">
-      <div class="card-content">
-        <span class="tag">Designer Basin</span>
-        <h3>Lomino Black</h3>
-        <a class="btn" href="#inquiry">Send Inquiry</a>
-      </div>
+    <div class="card product" data-name="white glossy basin designer">
+      <img src="images/white_glossybasin.jpg" alt="White Glossy Basin">
+      <div class="card-content"><span class="tag">Designer Basin</span><h3>White Glossy Basin</h3><a class="btn" href="#inquiry">Send Inquiry</a></div>
     </div>
 
   </div>
@@ -414,12 +161,10 @@
 
 <section id="catalogue" class="reveal">
   <div class="catalogue">
-    <h2>Latest Product Catalogue</h2>
-    <p style="margin:18px 0;font-size:18px;">
-      Our product range keeps changing based on stock and new arrivals. Download the latest catalogue or WhatsApp us for current availability.
-    </p>
-    <a class="btn" href="catalogue.pdf" download>Download Product Catalogue PDF</a>
-    <a class="btn btn-outline" href="https://wa.me/919878376000?text=Please%20send%20me%20your%20latest%20product%20catalogue%20and%20wholesale%20price%20list." target="_blank">Get Latest Catalogue on WhatsApp</a>
+    <h2>Complete Product Catalogue</h2>
+    <p style="margin:18px 0;font-size:18px;">Our product range keeps changing based on stock and new arrivals. View the latest catalogue or WhatsApp us for current availability.</p>
+    <a class="btn" href="catalogue.pdf" target="_blank">View Product Catalogue PDF</a>
+    <a class="btn white" href="https://wa.me/919878376000?text=Please%20send%20me%20your%20latest%20catalogue%20and%20wholesale%20price%20list." target="_blank">Get Latest Catalogue on WhatsApp</a>
   </div>
 </section>
 
@@ -430,16 +175,16 @@
   </div>
 
   <div class="forms">
-    <form onsubmit="sendInquiry(); return false;">
+    <form onsubmit="sendInquiry();return false;">
       <h3>Product Inquiry Form</h3>
       <input id="inqName" placeholder="Your Name" required>
       <input id="inqPhone" placeholder="Phone Number" required>
       <input id="inqProduct" placeholder="Product Name / Requirement" required>
-      <textarea id="inqMessage" placeholder="Quantity, location, or special requirement"></textarea>
+      <textarea id="inqMessage" placeholder="Quantity, city, or requirement"></textarea>
       <button class="btn" type="submit">Send Inquiry on WhatsApp</button>
     </form>
 
-    <form id="dealer" onsubmit="dealerRegister(); return false;">
+    <form id="dealer" onsubmit="dealerRegister();return false;">
       <h3>Dealer Registration Form</h3>
       <input id="dealerName" placeholder="Dealer / Business Name" required>
       <input id="dealerPhone" placeholder="Phone Number" required>
@@ -455,15 +200,23 @@
   </div>
 </section>
 
-<section id="location" class="map reveal">
+<section id="location" class="reveal">
   <div class="title">
     <h2>Visit Our Warehouse</h2>
     <p>Ganpati Agro Godowns, Malout Road, Bathinda, Punjab – 151001</p>
   </div>
 
-  <iframe
-    src="https://www.google.com/maps?q=Ganpati%20Agro%20Godowns%2C%20Malout%20Road%2C%20Bathinda%2C%20Punjab%20151001&output=embed">
-  </iframe>
+  <div class="location-box">
+    <div class="location-card">
+      <h2 style="color:#071b3a;margin-bottom:15px;">📍 Heyansh Suppliers</h2>
+      <p><b>Address:</b><br>Ganpati Agro Godowns, Malout Road, Bathinda, Punjab – 151001</p><br>
+      <p><b>Phone / WhatsApp:</b><br>+91 98783 76000</p><br>
+      <p><b>Services:</b><br>Wholesale Sanitaryware • Designer Basins • One Piece Closets • Pan India Shipping</p><br>
+      <a class="btn" href="https://maps.google.com/?q=Ganpati+Agro+Godowns+Malout+Road+Bathinda+Punjab+151001" target="_blank">Open Google Maps</a>
+    </div>
+
+    <iframe src="https://maps.google.com/maps?q=Ganpati%20Agro%20Godowns%20Malout%20Road%20Bathinda%20Punjab%20151001&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </div>
 </section>
 
 <footer id="contact">
@@ -474,59 +227,46 @@
   <p>Pan India Shipping Available</p>
 </footer>
 
-<a class="floating-whatsapp" href="https://wa.me/919878376000?text=Hello%20Heyansh%20Suppliers,%20I%20want%20to%20enquire%20about%20wholesale%20sanitaryware." target="_blank">
-  WhatsApp
-</a>
+<a class="float-wa" href="https://wa.me/919878376000?text=Hello%20Heyansh%20Suppliers,%20I%20want%20to%20enquire%20about%20wholesale%20sanitaryware." target="_blank">WhatsApp</a>
 
-<a class="sticky-call" href="tel:+919878376000">
-  Call Now: +91 98783 76000
-</a>
+<a class="sticky-call" href="tel:+919878376000">Call Now: +91 98783 76000</a>
 
 <script>
-  function searchProducts(){
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let products = document.querySelectorAll(".product");
+function searchProducts(){
+  let input=document.getElementById("searchInput").value.toLowerCase();
+  document.querySelectorAll(".product").forEach(product=>{
+    let name=product.getAttribute("data-name").toLowerCase();
+    product.style.display=name.includes(input)?"block":"none";
+  });
+}
 
-    products.forEach(product => {
-      let name = product.getAttribute("data-name").toLowerCase();
-      product.style.display = name.includes(input) ? "block" : "none";
-    });
-  }
+function sendInquiry(){
+  let name=document.getElementById("inqName").value;
+  let phone=document.getElementById("inqPhone").value;
+  let product=document.getElementById("inqProduct").value;
+  let message=document.getElementById("inqMessage").value;
+  let text=`Hello Heyansh Suppliers,%0A%0AI want to enquire about:%0AProduct: ${product}%0AName: ${name}%0APhone: ${phone}%0AMessage: ${message}%0A%0APlease share wholesale price and availability.`;
+  window.open(`https://wa.me/919878376000?text=${text}`,"_blank");
+}
 
-  function sendInquiry(){
-    let name = document.getElementById("inqName").value;
-    let phone = document.getElementById("inqPhone").value;
-    let product = document.getElementById("inqProduct").value;
-    let message = document.getElementById("inqMessage").value;
+function dealerRegister(){
+  let name=document.getElementById("dealerName").value;
+  let phone=document.getElementById("dealerPhone").value;
+  let city=document.getElementById("dealerCity").value;
+  let type=document.getElementById("dealerType").value;
+  let text=`Hello Heyansh Suppliers,%0A%0AI want to register as a dealer.%0ABusiness Name: ${name}%0APhone: ${phone}%0ACity/State: ${city}%0AType: ${type}%0APlease share wholesale/dealership details.`;
+  window.open(`https://wa.me/919878376000?text=${text}`,"_blank");
+}
 
-    let text = `Hello Heyansh Suppliers,%0A%0AI want to enquire about:%0AProduct: ${product}%0AName: ${name}%0APhone: ${phone}%0AMessage: ${message}%0A%0APlease share wholesale price and availability.`;
-    window.open(`https://wa.me/919878376000?text=${text}`, "_blank");
-  }
-
-  function dealerRegister(){
-    let name = document.getElementById("dealerName").value;
-    let phone = document.getElementById("dealerPhone").value;
-    let city = document.getElementById("dealerCity").value;
-    let type = document.getElementById("dealerType").value;
-
-    let text = `Hello Heyansh Suppliers,%0A%0AI want to register as a dealer.%0ABusiness Name: ${name}%0APhone: ${phone}%0ACity/State: ${city}%0AType: ${type}%0A%0APlease share dealership/wholesale details.`;
-    window.open(`https://wa.me/919878376000?text=${text}`, "_blank");
-  }
-
-  window.addEventListener("scroll", reveal);
-
-  function reveal(){
-    let reveals = document.querySelectorAll(".reveal");
-    reveals.forEach(item => {
-      let windowHeight = window.innerHeight;
-      let revealTop = item.getBoundingClientRect().top;
-      if(revealTop < windowHeight - 100){
-        item.classList.add("active");
-      }
-    });
-  }
-
-  reveal();
+function reveal(){
+  document.querySelectorAll(".reveal").forEach(item=>{
+    if(item.getBoundingClientRect().top < window.innerHeight - 100){
+      item.classList.add("active");
+    }
+  });
+}
+window.addEventListener("scroll",reveal);
+reveal();
 </script>
 
 </body>
